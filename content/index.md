@@ -1,5 +1,5 @@
 ---
-Title: Home
+Title: Bobo Backman
 Description: This is our index page.
 ---
 
