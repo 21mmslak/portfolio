@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: $grafiskDesign3Hex;
+  color: $grafiskDesign4Hex;
+  border-top: 4px solid $grafiskDesign1Hex;
+
+  .social a {
+    text-decoration: none;
+    color: $grafiskDesign4Hex;
+    font-size: 3rem;
+  }
+}

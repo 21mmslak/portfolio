@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "stylelint-config-sass-guidelines"
+    ],
+    "rules": {
+        "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9-]*$"
+    },
+    "ignoreFiles": [
+        "**/node_modules/",
+        "shared/fontawesome/**/*.scss",
+        "**/*.css",
+        "**/*.min.css"
+    ]
+}

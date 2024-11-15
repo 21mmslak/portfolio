@@ -6,7 +6,7 @@ Description: This is our index page.
 Home page
 ==========================
 
-![me](%assets_url%/img/rocky.jpeg){.rocky}
+<!-- ![me](%assets_url%/img/rocky.jpeg){.rocky} -->
 
 Mitt namn är Bobo Backman jag bor i Stockholm och pluggar webbprogramering på distans.
 

@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $grafiskDesign2Hex;
+  padding: 1rem;
+  border-bottom: 4px solid $grafiskDesign1Hex;
+}
+
+.logo {
+  padding: 1rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  a {
+    color: $grafiskDesign4Hex;
+    text-decoration: none;
+  }
+}
+
+.title a:hover {
+  color: $grafiskDesign1Hex;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  font-size: 3rem;
+  color: $grafiskDesign4Hex;
+  text-decoration: none;
+
+  &:hover {
+    color: $grafiskDesign1Hex;
+    border-bottom: 4px solid $grafiskDesign1Hex;
+  }
+}
+
