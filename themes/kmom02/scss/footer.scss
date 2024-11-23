@@ -1,6 +1,8 @@
 .footer {
+  grid-column: first / end;
+  grid-row: row3-start / row-end;
   display: flex;
-  flex-direction: row;
+
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
@@ -8,9 +10,36 @@
   color: $grafiskDesign4Hex;
   border-top: 4px solid $grafiskDesign1Hex;
 
-  .social a {
-    text-decoration: none;
-    color: $grafiskDesign4Hex;
-    font-size: 3rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer-text {
+  text-align: left;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.social {
+  text-align: right;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.social a {
+  text-decoration: none;
+  color: $grafiskDesign4Hex;
+  font-size: 2rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
   }
 }

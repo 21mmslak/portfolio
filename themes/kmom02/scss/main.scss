@@ -4,18 +4,28 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: [first] 20% [second] 60% [third] 20% [end];
+  grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row-end];
+  // display: flex;
+  // flex-direction: column;
 }
 
 .main {
-  flex: 1 0 auto;
+  grid-column: second / third;
+  grid-row: row2-start / row3-start;
+  // flex: 1 0 auto;
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: [first] 10% [second] auto [third] 10% [end];
+    grid-column: second / third;
+  }
 }
 
-.header,
-.footer {
-  flex: 0 0 auto;
-}
+// .header,
+// .footer {
+//   // flex: 0 0 auto;
+// }
 
 .main {
   width: 100%;
