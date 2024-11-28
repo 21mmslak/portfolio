@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  background-color: $mainBackColor;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 .main {
   grid-column: second / third;
   grid-row: row2-start / row3-start;
+  background-color: $mainBackColor;
   // flex: 1 0 auto;
   @media (max-width: 768px) {
     display: grid;
@@ -33,4 +35,5 @@ body {
   padding: 2rem;
   margin: 0 auto;
   box-sizing: border-box;
+  background-color: $mainBackColor;
 }
