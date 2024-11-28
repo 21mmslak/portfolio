@@ -1,3 +1,8 @@
+// $theme: 'light' !default;
+// @use 'variabler' as v with (
+//   $theme: $theme
+// );
+
 html,
 body {
   height: 100%;
@@ -36,4 +41,14 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   background-color: $mainBackColor;
+}
+
+.links a{
+  color: $mainFonColor;
+  text-decoration: none;
+}
+
+.webbsite {
+  width: 300px;
+  height: auto;
 }

@@ -27,11 +27,13 @@
   padding: 1rem;
   grid-column: second / third;
   grid-row: row1-start / row-end;
+
   a {
     color: $grafiskDesign4Hex;
     text-decoration: none;
   }
 }
+
 .nav {
   grid-column: third / end;
   grid-row: row1-start / row-end;

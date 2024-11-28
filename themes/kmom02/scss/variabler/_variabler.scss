@@ -1,0 +1,12 @@
+$theme: 'light' !default;
+
+@use '_variabler-light' as vl;
+@use '_variabler-dark' as vd;
+
+$mainBackColor: vl.$mainBackColor !default;
+$mainFonColor: vl.$mainFonColor !default;
+
+@if $theme == 'dark' {
+  $mainBackColor: vd.$mainBackColor !default;
+  $mainFonColor: vd.$mainFonColor !default;
+}

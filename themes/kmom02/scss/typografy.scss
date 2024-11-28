@@ -1,3 +1,8 @@
+// $theme: 'light' !default;
+// @use 'variabler' as v with (
+//   $theme: $theme
+// );
+
 body {
   line-height: 1.4;
   font-family: 'Inter', sans-serif;

@@ -1,3 +1,5 @@
+//$theme: 'light' !default;
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import '../../shared/fontawesome/scss/fontawesome';
@@ -7,12 +9,19 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 
 @import '../../node_modules/normalize.css/normalize';
-@import 'variables';
+// @import 'variables';
 @import 'variabler';
 
 @import 'typografy';
+//   with (
+//   $theme: $theme
+// );
 
 @import 'main';
+//  with (
+//   $theme: $theme
+// );
+
 @import 'footer';
 @import 'header';
 @import 'technology';
