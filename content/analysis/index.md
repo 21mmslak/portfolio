@@ -1,5 +1,5 @@
 ---
-Title: Rapporter
+Title: Analysis
 Description: This is our repp page.
 Template: rapport
 techs:
@@ -10,5 +10,5 @@ techs:
   - name: DESIGN
     class: design
 ---
-Rapporter
+Analysis
 ================
