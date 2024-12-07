@@ -1,0 +1,86 @@
+@use 'variabler' as *;
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+.pic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  margin: auto;
+  background-color: $grafiskDesign3Hex;
+  border: 4px solid $grafiskDesign5Hex;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pic {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}   
+
+.gt3,
+.brabus,
+.jesko,
+.rolls,
+.rs6,
+.svj {
+  grid-column: span 1;
+}
+
+.yt {
+  width: 100%;
+  max-width: 50rem;
+  justify-self: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  border-top: 2rem solid transparent;
+}
+  
+.yt iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //border: none;
+}
+
+.kalk {
+  width: 100%;
+  max-width: 50rem;
+  justify-self: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  border-top: 2rem solid transparent;
+}
+    
+.kalk iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //border: none;
+}

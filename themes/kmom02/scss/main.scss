@@ -1,3 +1,5 @@
+@use 'variabler' as *;
+
 // $theme: 'light' !default;
 // @use 'variabler' as v with (
 //   $theme: $theme
@@ -5,16 +7,24 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html,
+body {
   height: 100%;
   background-color: $mainBackColor;
 }
 
+
 body {
-  display: grid;
-  grid-template-columns: [first] 20% [second] 60% [third] 20% [end];
+  // display: grid;
+  // grid-template-columns: [first] 20% [second] 60% [third] 20% [end];
   grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row-end];
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
@@ -22,11 +32,11 @@ body {
   grid-row: row2-start / row3-start;
   background-color: $mainBackColor;
   // flex: 1 0 auto;
-  @media (max-width: 768px) {
-    display: grid;
-    grid-template-columns: [first] 10% [second] auto [third] 10% [end];
-    grid-column: second / third;
-  }
+  // @media (max-width: 768px) {
+  //   display: grid;
+  //   grid-template-columns: [first] 10% [second] auto [third] 10% [end];
+  //   grid-column: second / third;
+  // }
 }
 
 // .header,
@@ -51,4 +61,8 @@ body {
 .webbsite {
   width: 300px;
   height: auto;
+}
+
+.hidden {
+  display: none !important;
 }

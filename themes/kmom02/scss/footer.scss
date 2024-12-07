@@ -1,14 +1,16 @@
+@use 'variabler' as *;
+
 .footer {
   grid-column: first / end;
   grid-row: row3-start / row-end;
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
   background-color: $grafiskDesign3Hex;
   color: $grafiskDesign4Hex;
   border-top: 4px solid $grafiskDesign1Hex;
+  min-height: 17rem;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

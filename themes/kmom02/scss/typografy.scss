@@ -1,7 +1,4 @@
-// $theme: 'light' !default;
-// @use 'variabler' as v with (
-//   $theme: $theme
-// );
+@use 'variabler' as *;
 
 body {
   line-height: 1.4;

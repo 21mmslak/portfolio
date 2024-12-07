@@ -1,11 +1,13 @@
+@use 'variabler' as *;
+
 .header {
-  grid-column: first / end;
-  grid-row: row1-start / row2-start;
-  display: grid;
-  grid-template-columns: [first] 20% [second] auto [third] auto [end];
-  grid-template-rows: [row1-start] auto [row-end];
-  // display: flex;
-  // flex-direction: row;
+  // grid-column: first / end;
+  // grid-row: row1-start / row2-start;
+  // display: grid;
+  // grid-template-columns: [first] 20% [second] auto [third] auto [end];
+  // grid-template-rows: [row1-start] auto [row-end];
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: $grafiskDesign2Hex;
@@ -15,8 +17,8 @@
 
 .logo {
   padding: 1rem;
-  grid-column: first / second;
-  grid-row: row1-start / row-end;
+  // grid-column: first / second;
+  // grid-row: row1-start / row-end;
 }
 
 .title {
@@ -25,8 +27,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  grid-column: second / third;
-  grid-row: row1-start / row-end;
+  // grid-column: second / third;
+  // grid-row: row1-start / row-end;
 
   a {
     color: $grafiskDesign4Hex;
@@ -35,8 +37,8 @@
 }
 
 .nav {
-  grid-column: third / end;
-  grid-row: row1-start / row-end;
+  // grid-column: third / end;
+  // grid-row: row1-start / row-end;
   justify-self: end;
 }
 

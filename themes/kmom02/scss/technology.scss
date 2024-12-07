@@ -1,3 +1,25 @@
+@use 'variabler' as *;
+
+.main landing-page {
+  grid-column: second / third;
+  grid-row: row2-start / row3-start;
+  background-color: $mainBackColor;
+  // flex: 1 0 auto;
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: [first] 10% [second] auto [third] 10% [end];
+    grid-column: second / third;
+  }
+}
+
+.body .landing-page {
+  display: grid;
+  grid-template-columns: [first] 20% [second] 60% [third] 20% [end];
+  grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row-end];
+  // display: flex;
+  // flex-direction: column;
+}
+
 .landing-page {
   display: grid;
   grid-template-columns: [first] 33% [second] 33% [third] 33% [end];

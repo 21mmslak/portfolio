@@ -1,4 +1,26 @@
-//$theme: 'dark';
+@use 'variabler' as * with (
+  $mainBackColor: #222,
+  $mainFonColor: #eee,
+
+    
+  $grafiskDesign1Hex: #02060d,
+  $grafiskDesign2Hex: #011c40,
+  $grafiskDesign3Hex: #081526,
+  $grafiskDesign4Hex: #4f6f8c,
+    $grafiskDesign5Hex: #98a6a2
+);
+
+@use 'typografy';
+
+@use 'main';
+@use 'footer';
+@use 'header-test';
+@use 'technology';
+
+@use 'blockquotes';
+@use 'code';
+
+@use 'gallery';
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -9,21 +31,3 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 
 @import '../../node_modules/normalize.css/normalize';
-// @import 'variables';
-@import 'variabler-dark';
-
-@import 'typografy';
-//  with (
-//   $theme: $theme
-// );
-
-@import 'main';
-//   with (
-//   $theme: $theme
-// );
-@import 'footer';
-@import 'header';
-@import 'technology';
-
-@import 'blockquotes';
-@import 'code';
