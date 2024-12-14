@@ -35,7 +35,7 @@ Bobos gallery page
             <img src="image/rolls.jpg?w=375&h=375&crop-to-fit&q=50" alt="rolls">
         </picture>
     </a>
-    <a href="assets/img/rs6.jpg" target="_blank>
+    <a href="assets/img/rs6.jpg" target="_blank">
         <picture class="rs6">
             <source media="(min-width: 668px)" srcset="image/rs6.jpg?w=960&q=90">
             <source media="(min-width: 376px)" srcset="image/rs6.jpg?w=667&q=70">

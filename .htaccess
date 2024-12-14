@@ -2,6 +2,10 @@ RewriteEngine On
 # May be required to access sub directories
 #RewriteBase /
 
+# Force HTTPS for all requests
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Ignore real files (images, stylesheets etc.)
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d

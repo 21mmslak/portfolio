@@ -29,11 +29,6 @@
   padding: 1rem;
   // grid-column: second / third;
   // grid-row: row1-start / row-end;
-
-  a {
-    color: $grafiskDesign4Hex;
-    text-decoration: none;
-  }
 }
 
 .nav {
@@ -42,9 +37,13 @@
   justify-self: end;
 }
 
-.title a:hover {
-  color: $grafiskDesign1Hex;
-}
+// .title a, h1, p {
+//   color: aqua;
+// }
+
+// .title a:hover {
+//   color: $grafiskDesign1Hex;
+// }
 
 .site-header {
   display: flex;

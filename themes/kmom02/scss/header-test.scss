@@ -19,6 +19,16 @@
 .logo {
   flex: 0 0 auto;
   padding: 3em;
+
+  @media screen and (max-width: 768px) {
+    padding: 1.5em;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 1em;
+    max-width: 120px;
+    height: auto;
+  }
 }
 
 .title {
@@ -27,6 +37,12 @@
   white-space: nowrap;
   margin: 0;
   padding: 0;
+
+  a,
+  h1,
+  p {
+    color: $titleColor;
+  }
 }
 
 .nav {
@@ -85,7 +101,7 @@
   text-decoration: none;
   
   &:hover {
-    color: $grafiskDesign1Hex;
-    border-bottom: 4px solid $grafiskDesign1Hex;
+    color: $titleColor;
+    border-bottom: 4px solid $titleColor;
   }
 }

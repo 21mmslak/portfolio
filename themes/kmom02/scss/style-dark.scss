@@ -1,13 +1,13 @@
 @use 'variabler' as * with (
   $mainBackColor: #222,
   $mainFonColor: #eee,
-
-    
+  $titleColor: #eee,
+  
   $grafiskDesign1Hex: #02060d,
   $grafiskDesign2Hex: #011c40,
   $grafiskDesign3Hex: #081526,
   $grafiskDesign4Hex: #4f6f8c,
-    $grafiskDesign5Hex: #98a6a2
+  $grafiskDesign5Hex: #98a6a2
 );
 
 @use 'typografy';

@@ -53,6 +53,10 @@ body {
   background-color: $mainBackColor;
 }
 
+.main a {
+  color: $mainFonColor;
+}
+
 .links a {
   color: $mainFonColor;
   text-decoration: none;
@@ -65,4 +69,21 @@ body {
 
 .hidden {
   display: none !important;
+}
+
+.image-text-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.float-image {
+  float: left;
+  margin: 0 10px 0 0;
+  height: auto;
+}
+
+.image-text-container::after {
+  content: '';
+  display: table;
+  clear: both;
 }

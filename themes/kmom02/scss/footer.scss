@@ -8,7 +8,7 @@
   align-items: center;
   padding: 2rem;
   background-color: $grafiskDesign3Hex;
-  color: $grafiskDesign4Hex;
+  color: $titleColor;
   border-top: 4px solid $grafiskDesign1Hex;
   min-height: 17rem;
 
@@ -38,10 +38,21 @@
 
 .social a {
   text-decoration: none;
-  color: $grafiskDesign4Hex;
-  font-size: 2rem;
+  color: $titleColor;
+  font-size: 2.5rem;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px;
 
   @media screen and (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 5px 8px;
+  }
+
+  &:hover,
+  &:focus {
+    color: color.adjust($titleColor, $lightness: -15%);
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
   }
 }
